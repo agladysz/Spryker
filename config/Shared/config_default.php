@@ -311,7 +311,6 @@ $config[PropelConstants::ZED_DB_PASSWORD] = getenv('SPRYKER_DB_PASSWORD');
 $config[PropelConstants::ZED_DB_DATABASE] = getenv('SPRYKER_DB_DATABASE');
 $config[PropelConstants::ZED_DB_REPLICAS] = json_decode(getenv('SPRYKER_DB_REPLICAS') ?: '[]', true);
 $config[PropelConstants::USE_SUDO_TO_MANAGE_DATABASE] = false;
-
 // >>> SEARCH
 
 $config[SearchElasticsearchConstants::HOST] = getenv('SPRYKER_SEARCH_HOST');
