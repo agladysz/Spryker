@@ -1,13 +1,14 @@
 <?php
 
 namespace Pyz\Zed\HelloSpryker\Business\Reverser;
+use Generated\Shared\Transfer\HelloSprykerTransfer;
 
 interface StringReverserInterface
 {
     /**
-     * @param string $stringToReverse
+     * @param \Generated\Shared\Transfer\HelloSprykerTransfer $helloSprykerTransfer
      *
-     * @return string
+     * @return \Generated\Shared\Transfer\HelloSprykerTransfer
      */
-    public function reverseString(string $stringToReverse): string;
+    public function reverseString(HelloSprykerTransfer $helloSprykerTransfer): HelloSprykerTransfer;
 }
