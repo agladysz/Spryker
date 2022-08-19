@@ -1,6 +1,7 @@
 <?php
 namespace Pyz\Zed\Planet\Business\Planet;
 
+use Generated\Shared\Transfer\PlanetCollectionTransfer;
 use Generated\Shared\Transfer\PlanetTransfer;
 use Pyz\Zed\Planet\Persistence\PlanetRepositoryInterface;
 
@@ -26,4 +27,13 @@ class PlanetReader implements PlanetReaderInterface
     {
         return $this->planetRepository->findPlanetById($idPlanet);
     }
+    /**
+     * @param \Generated\Shared\Transfer\PlanetCollectionTransfer $planetsRestApiTransfer
+     * @return \Generated\Shared\Transfer\PlanetCollectionTransfer $planetsRestApiTransfer
+     */
+    public function getPlanetCollection(PlanetCollectionTransfer $planetsRestApiTransfer): PlanetCollectionTransfer
+    {
+        return $this->planetRepository->getPlanetCollection($planetsRestApiTransfer);
+    }
+
 }
