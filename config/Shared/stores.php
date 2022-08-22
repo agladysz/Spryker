@@ -34,6 +34,7 @@ if (!empty(getenv('SPRYKER_ACTIVE_STORES'))) {
             // first entry is default
             'en' => 'en_US',
             'de' => 'de_DE',
+            'pl' => 'pl_PL',
         ],
         // first entry is default
         'countries' => ['DE', 'AT', 'NO', 'CH', 'ES', 'GB'],
